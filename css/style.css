@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(../vendors/fonts/raleway/Raleway-Light.ttf);
+}
+/* General */
+
+.center-block{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.center-text{
+	text-align: center;
+}
+
+/* Index */
+
+#index .title{
+	text-align: center;
+	margin-top: 170px;
+	margin-bottom: 30px;
+}
+
+#index #github-wrapper{
+	width: 40px;
+}
+
+#index #github{
+	height : 40px;
+	width : 40px;
+	cursor: pointer;
+}
+
+#index .label{
+	opacity: 0;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+#index:hover .label{
+	opacity: .6;
+}

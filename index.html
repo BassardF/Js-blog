@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+	<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+	<script type="text/x-handlebars" data-template-name="application">
+
+		<div class="container">
+			{{outlet}}
+		</div>
+		
+	</script>
+	
+	<script type="text/x-handlebars" data-template-name="index">
+		<div id="index">
+			
+			<h2 class="title">Simple JavaScript for smart crafters.</h2>
+			<div id="github-wrapper"class="center-block">
+				<img id="github" src="assets/img/github.svg" alt="GitHub logo">
+				<div class="label center-text">GitHub</div>
+			</div>
+			
+			{{name}}
+			
+		</div>
+	</script>
+	
+
+
+	<!-- Apis -->
+	<script type="text/javascript" src="vendors/js/jquery.js"></script>
+	<script type="text/javascript" src="vendors/js/handlebars.min.js"></script>
+	<script type="text/javascript" src="vendors/js/ember.js"></script>	
+	<script type="text/javascript" src="vendors/js/ember-template-compiler.js"></script>
+	<script type="text/javascript" src="vendors/js/ember.debug.js"></script>	
+
+	<!-- App -->
+	<script type="text/javascript" src="app/app.js"></script>
+
+	<!-- Router -->
+	<script type="text/javascript" src="app/router.js"></script>
+	<!-- Controllers -->
+	<script type="text/javascript" src="app/controllers/test.js"></script>
+	<!-- Routes -->
+	<script type="text/javascript" src="app/routes/test.js"></script>
+	<script type="text/javascript" src="app/routes/index.js"></script>	
+
+
+	
+</body>
+</html>
