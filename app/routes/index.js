@@ -1,13 +1,15 @@
 App.IndexRoute = Ember.Route.extend({
   model: function() {
-	  var tags = [],
-	  	  articles = Ember.$.getJSON('data/articles.json');
+	  var fetched =  Ember.$.getJSON('data/articles.json').then(function(articles) {
+		  var tags = [];
 		  for (var i = 0; i < articles.length; i++) {
-			  tags.concat(articles[i].tags);
+			  tags = tags.concat(articles[i].tags);
 		  }
 		  return {
 			  articles : articles,
 			  tags : tags
-		  }
+		  };
+	  });
+	  return fetched;
   }
 });
