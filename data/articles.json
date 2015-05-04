@@ -2,11 +2,13 @@
 	{
 		"id" : 1,
 		"title" : "premier article",
-		"date" : "2/3/2015"
+		"date" : "2/3/2015",
+		"tags" : ["tag1", "tag2"]
 	},
 	{
 		"id" : 2,
 		"title" : "second article",
-		"date" : "4/3/2015"
+		"date" : "4/3/2015",
+		"tags" : ["tag3", "tag4"]
 	}
 ]
