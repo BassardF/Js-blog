@@ -1,14 +1,18 @@
 [
 	{
 		"id" : 1,
-		"title" : "premier article",
+		"title" : "Nesting resources with Angular",
 		"date" : "2/3/2015",
-		"tags" : ["tag1", "tag2"]
-	},
-	{
+		"tags" : ["JavaScript", "AngularJs", "REST"]
+	}, {
 		"id" : 2,
-		"title" : "second article",
+		"title" : "CSS : Standard situations and best practices Part 1",
 		"date" : "4/3/2015",
-		"tags" : ["tag3", "tag4"]
+		"tags" : ["css"]
+	}, {
+		"id" : 3,
+		"title" : "Angular architecture and dependency injection strategy",
+		"date" : "5/3/2015",
+		"tags" : ["JavaScript", "AngularJs"]
 	}
 ]
