@@ -29,8 +29,8 @@
 			<div id="tags-box">
 				<div>
 					{{#each tag in model.tags}}
-						<div class="tags">{{tag}}</div>
-					{{/each}}					
+						<div class="tags {{if tag.selected 'selected'}}" {{action 'toggleTag' tag}}>{{tag.tag}}</div>
+					{{/each}}	
 				</div>
 			</div>
 

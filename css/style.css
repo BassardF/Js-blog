@@ -49,6 +49,10 @@
 	cursor: pointer;
 }
 
+#index .tags.selected{
+	background-color: teal;
+}
+
 #index #tags-box{
 	margin-top: 10px;
 	margin-bottom: 10px;
