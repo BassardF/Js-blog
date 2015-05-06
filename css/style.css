@@ -41,3 +41,19 @@
 #index:hover .label{
 	opacity: .6;
 }
+
+#index .tags{
+	display: inline-block;
+	background-color: rgb(245, 245, 245);
+	padding: 5px 10px 5px 10px;
+	cursor: pointer;
+}
+
+#index #tags-box{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;	
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}

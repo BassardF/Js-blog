@@ -26,9 +26,14 @@
 				<div class="label center-text">GitHub</div>
 			</div>
 			
-			{{#each tag in model.tags}}
-				<span>{{tag}} tt </span>
-			{{/each}}
+			<div id="tags-box">
+				<div>
+					{{#each tag in model.tags}}
+						<div class="tags">{{tag}}</div>
+					{{/each}}					
+				</div>
+			</div>
+
 			
 			{{#each article in model.articles}}
 				<span>{{article.title}} aa </span>
