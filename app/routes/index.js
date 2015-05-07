@@ -3,6 +3,7 @@ App.IndexRoute = Ember.Route.extend({
 	  return Ember.$.getJSON('data/articles.json').then(function(articles) {
 		  var tags = [];
 		  for (var i = 0; i < articles.length; i++) {
+			  articles[i].visible = i < 20;
 			  for (var j = 0; j < articles[i].tags.length; j++) {
 				  tags.push({
 					  tag : articles[i].tags[j],

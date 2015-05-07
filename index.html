@@ -21,8 +21,11 @@
 		<div id="index">
 			
 			<h2 class="title">Simple JavaScript for smart crafters.</h2>
-			<div id="github-wrapper"class="center-block">
-				<img id="github" src="assets/img/github.svg" alt="GitHub logo">
+			
+			<div class='gitpack'>
+				<div id="github-wrapper"class="center-block">
+					<img id="github" src="assets/img/github.svg" alt="GitHub logo">
+				</div>
 				<div class="label center-text">GitHub</div>
 			</div>
 			
@@ -36,7 +39,18 @@
 
 			
 			{{#each article in model.articles}}
-				<span>{{article.title}} aa </span>
+				{{#if article.visible}}
+					<div class="article">
+						<h3>{{article.title}}</h3>
+						<div class="subline">{{article.date}} by {{article.author}}</div>
+						<div class="article-tag-box">
+							{{#each tag in article.tags}}
+								<div>{{tag}}</div>
+							{{/each}}
+						</div>
+						<p>{{article.description}}</p>
+					</div>
+				{{/if}}
 			{{/each}}
 			
 			
