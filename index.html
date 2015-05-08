@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <title></title>
 	<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/shCore.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/shCoreDefault.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/shThemeDefault.css">	
 	<link rel="stylesheet" type="text/css" href="vendors/css/skeleton.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -67,15 +70,21 @@
 				{{model.date}} by {{model.author}}
 			</div>
 			
-			{{#each line in model.content}}
-				{{content line}}
-			{{/each}}
+			<div class="content">
+				{{#each line in model.content}}
+					{{content line}}
+				{{/each}}				
+			</div>
+
 		</div>
 	</script>
 	
 
 
 	<!-- Apis -->
+	<script type="text/javascript" src="vendors/js/shCore.js"></script>
+	<script type="text/javascript" src="vendors/js/shBrushJScript.js"></script>
+	<script type="text/javascript" src="vendors/js/shBrushCss.js"></script>		
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="vendors/js/handlebars.min.js"></script>
 	<script type="text/javascript" src="vendors/js/ember.js"></script>	

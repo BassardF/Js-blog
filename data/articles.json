@@ -9,7 +9,7 @@
 		"released" : true,
 		"content" : [{
 				"type" : "img",
-				"value" : "testpic.png"
+				"value" : "imgres.jpg"
 			}, {
 				"type" : "p",
 				"value" : "Un paragraphe tout ce qu'y a de plus normal."
@@ -21,7 +21,7 @@
 				"value" : "Un grand titre h2"
 			}, {
 				"type" : "quote",
-				"value" : "Une super grand titre h1",
+				"value" : "Une quote de folie",
 				"author" : "le nom"
 			}, {
 				"type" : "list",
@@ -30,7 +30,7 @@
 			}, {
 				"type" : "code",
 				"syntax" : "js",
-				"line" : "var t = function(){console.log('hey salut')}"	
+				"value" : "var t = function(){\n\tconsole.log('hey salut')\n}"	
 			}
 		]
 	}, {
