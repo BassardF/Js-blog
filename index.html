@@ -68,11 +68,8 @@
 			</div>
 			
 			{{#each line in model.content}}
-				{{#if test}}
-					<h1>{{line}}</h1>
-				{{/if}}
+				{{content line}}
 			{{/each}}
-			
 		</div>
 	</script>
 	
