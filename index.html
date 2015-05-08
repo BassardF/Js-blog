@@ -40,19 +40,38 @@
 			
 			{{#each article in model.articles}}
 				{{#if article.visible}}
-					<div class="article">
-						<h3>{{article.title}}</h3>
-						<div class="subline">{{article.date}} by {{article.author}}</div>
-						<div class="article-tag-box">
-							{{#each tag in article.tags}}
-								<div>{{tag}}</div>
-							{{/each}}
+					{{#link-to 'article' article}}
+						<div class="article">
+							<h3>{{article.title}}</h3>
+							<div class="subline">{{article.date}} by {{article.author}}</div>
+							<div class="article-tag-box">
+								{{#each tag in article.tags}}
+									<div>{{tag}}</div>
+									{{/each}}
+								</div>
+							<p>{{article.description}}</p>
 						</div>
-						<p>{{article.description}}</p>
-					</div>
+					{{/link-to}}
 				{{/if}}
 			{{/each}}
 			
+			
+		</div>
+	</script>
+	
+	<script type="text/x-handlebars" data-template-name="article">
+		<div id="article">
+			
+			<h2 class="title">{{model.title}}</h2>
+			<div class='subline'>
+				{{model.date}} by {{model.author}}
+			</div>
+			
+			{{#each line in model.content}}
+				{{#if test}}
+					<h1>{{line}}</h1>
+				{{/if}}
+			{{/each}}
 			
 		</div>
 	</script>
@@ -73,8 +92,10 @@
 	<script type="text/javascript" src="app/router.js"></script>
 	<!-- Controllers -->
 	<script type="text/javascript" src="app/controllers/index.js"></script>
+	<script type="text/javascript" src="app/controllers/article.js"></script>	
 	<!-- Routes -->
 	<script type="text/javascript" src="app/routes/index.js"></script>
+	<script type="text/javascript" src="app/routes/article.js"></script>
 
 
 	

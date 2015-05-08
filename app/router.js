@@ -1,3 +1,3 @@
 App.Router.map(function(){
-	this.route('test');
+	this.route("article", { path: "article/:article_id" });
 });

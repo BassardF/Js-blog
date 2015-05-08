@@ -1,24 +1,53 @@
 [
 	{
-		"id" : 1,
+		"article_id" : 1,
 		"title" : "Nesting resources with Angular",
 		"description" : "Un description un peu lamnda, principalement histoire d'avoir du text qui prend un peu de place. Pour check si ca passe cote UI quoi --. En fait il m'en faut encore un peu plus pour le multiline sur ecran large !", 
 		"date" : "2/3/2015",
 		"tags" : ["JavaScript", "AngularJs", "REST"],
-		"author" : "Frank Bassard"
+		"author" : "Frank Bassard",
+		"released" : true,
+		"content" : [{
+				"type" : "img",
+				"value" : "testpic.png"
+			}, {
+				"type" : "p",
+				"value" : "Un paragraphe tout ce qu'y a de plus normal."
+			}, {
+				"type" : "h1",
+				"value" : "Un super grand titre h1"
+			}, {
+				"type" : "h2",
+				"value" : "Un grand titre h2"
+			}, {
+				"type" : "quote",
+				"value" : "Une super grand titre h1",
+				"author" : "le nom"
+			}, {
+				"type" : "list",
+				"line" : "la ligne d'intro",
+				"value" : ["first ligne", "seconde ligne"]
+			}, {
+				"type" : "code",
+				"syntax" : "js",
+				"line" : "var t = function(){console.log('hey salut')}"	
+			}
+		]
 	}, {
-		"id" : 2,
+		"article_id" : 2,
 		"title" : "CSS : Standard situations and best practices Part 1",
 		"description" : "Un description un peu lamnda, principalement histoire d'avoir du text qui prend un peu de place. Pour check si ca passe cote UI quoi --.",
 		"date" : "4/3/2015",
 		"tags" : ["css"],
-		"author" : "Frank Bassard"		
+		"author" : "Frank Bassard",
+		"released" : true
 	}, {
-		"id" : 3,
+		"article_id" : 3,
 		"title" : "Angular architecture and dependency injection strategy",
 		"description" : "Un description un peu lamnda, principalement histoire d'avoir du text qui prend un peu de place. Pour check si ca passe cote UI quoi --.",		
 		"date" : "5/3/2015",
 		"tags" : ["JavaScript", "AngularJs"],
-		"author" : "Frank Bassard"		
+		"author" : "Frank Bassard",
+		"released" : true
 	}
 ]
