@@ -16,9 +16,7 @@ App.IndexController = Ember.Controller.extend({
 				if(tagCount === 0){
 					Ember.set(articles[i], 'visible', true);
 				} else {
-					Ember.set(articles[i], 'visible', false);
-					console.log(articles[i].title);
-					console.log('false');				
+					Ember.set(articles[i], 'visible', false);		
 					for (var j = 0; j < articles[i].tags.length; j++) {
 						for (var k = 0; k <tags.length; k++) {
 							if(tags[k].tag == articles[i].tags[j] && tags[k].selected && count < 20){

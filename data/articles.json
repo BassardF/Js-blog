@@ -21,7 +21,7 @@
 				"value" : "Un grand titre h2"
 			}, {
 				"type" : "quote",
-				"value" : "Une quote de folie",
+				"value" : "Une super quote avec quand meme un peu de text. Pas trop long btw --",
 				"author" : "le nom"
 			}, {
 				"type" : "list",
