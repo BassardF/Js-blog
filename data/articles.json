@@ -49,5 +49,62 @@
 		"tags" : ["JavaScript", "AngularJs"],
 		"author" : "Frank Bassard",
 		"released" : true
+	}, {
+		"article_id" : 4,
+		"title" : "Angular Watch depth",
+		"description" : "Performance and depth analysis of Angular's watching system.",		
+		"date" : "5/3/2015",
+		"tags" : ["JavaScript", "AngularJs"],
+		"author" : "Frank Bassard",
+		"released" : true,
+		"content" : [{
+			"type" : "p",
+			"value" : "Watching the properties of the $scope is one of the core features of Angular. Most of the time it's an hidden process run in the background for you by the engine but It's still common to use it manually."
+		}, {
+			"type" : "p",
+			"value" : "Angular gives 3 way to watch a property depending on the depth required. The most depth you need, the less efficient is going to be the watch cycle."
+		}, {
+			"type" : "h2",
+			"value" : "Watch by reference"
+		}, {
+			"type" : "p",
+			"value" : "The most common way to watch is by reference it's also the fastest. As JavaScript is sharing object by reference, watching reference is only going to be triggered when the whole reference changes."
+		}, {
+			"type" : "p",
+			"value" : "Every change within the object won't trigger the watch since the reference doesn't change."
+		}, {
+			"type" : "code",
+			"syntax" : "js",
+			"value" : "$scope.$watch(variable, callback, false);"
+		}, {
+			"type" : "p",
+			"value" : "It's also the most common mechanism used by Angular, most of the build directives use reference watches (ngClass, ngModel, ngIf, ngShow, select ...)"
+		}, {
+			"type" : "h2",
+			"value" : "Watch a collection"
+		}, {
+			"type" : "p",
+			"value" : "Watching a collection is watching an ordered set of references. Creating, deleting or moving elements within the collection is going to trigger the watch but changes within each object of the collection isn't."
+		}, {
+			"type" : "code",
+			"syntax" : "js",
+			"value" : "$scope.$watchCollection(variable, callback);"
+		}, {
+			"type" : "p",
+			"value" : "You can find that behaviour in a fez directives like ngRepeat."
+		}, {
+			"type" : "h2",
+			"value" : "Equality watches"
+		}, {
+			"type" : "p",
+			"value" : "Equality watches are looking for every change within the object, whatever the depth of the object. This process use the angular.equals mechanism which is comparing every field of an object to a copy of himself."
+		}, {
+			"type" : "code",
+			"syntax" : "js",
+			"value" : "$scope.$watch(variable, callback, true);"
+		}, {
+			"type" : "p",
+			"value" : "Keep in mind that using equality watches is the heavier type watch, use it only if you need an in-depth comparaison of your object."
+		}]
 	}
 ]

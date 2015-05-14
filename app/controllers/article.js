@@ -4,6 +4,7 @@ App.ArticleController = Ember.Controller.extend({
 		this._super();
 		SyntaxHighlighter.all();
 		SyntaxHighlighter.defaults.toolbar = false;
+		console.log('init');
 	  }
 	
 });
