@@ -1,0 +1,70 @@
+[{
+	"author_id" : 1,
+	"name" : "Frank Bassard",
+	"pic" : "frank-pic.jpeg",
+	"website" : {
+		"url" : "http://frankbassard.fr/",
+		"label" : "frankbassard.fr"		
+	},
+	"job" : {
+		"text" : "Freelancer and software developer at Witios.",
+		"logo" : "witios.png"
+	},
+	"social" : [{
+		"url" : "http://twitter.com/MyRulz89",
+		"pic" : "twitter.svg",
+		"name" : "Twitter"
+	}, {
+		"url" : "https://github.com/BassardF",
+		"pic" : "github2.svg",
+		"name" : "GitHub"		
+	}, {
+		"url" : "https://www.linkedin.com/in/frankbassard",
+		"pic" : "linkedin.svg",
+		"name" : "LinkedIn"		
+	}],
+	"general-skills" : [{
+		"name" : "Javascript",
+		"pic" : "js.png",
+		"value" : 100
+	}, {
+		"name" : "Data management",
+		"pic" : "plot.png",
+		"value" : 90
+	} ,{
+		"name" : "UI / UI",
+		"pic" : "uxui.png",
+		"value" : 85
+	}, {
+		"name" : "BackboneJs",
+		"pic" : "backbone.png",
+		"value" : 45
+	}],
+	"front-skills" : [{
+		"name" : "AngularJs",
+		"pic" : "angularjs.png",
+		"value" : 95
+	}, {
+		"name" : "EmberJs",
+		"pic" : "ember.png",
+		"value" : 65
+	}, {
+		"name" : "BackboneJs",
+		"pic" : "backbone.png",
+		"value" : 45
+	}],
+	"back-skills" : [{
+		"name" : "Java/JEE",
+		"pic" : "java.jpeg",
+		"value" : 90
+	}, {
+		"name" : "NodeJs",
+		"pic" : "nodejs.png",
+		"value" : 85
+	}, {
+		"name" : "Ruby on rails",
+		"pic" : "ror.png",
+		"value" : 45
+	}]
+	
+}]

@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title></title>
+	<meta charset="utf-8">
+	<title>JavaScriptNation</title>
+	<link rel="icon" 
+	      type="image/png" 
+	      href="assets/img/logo-white.png">
 	<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/shCore.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/shCoreDefault.css">
@@ -22,12 +25,14 @@
 	
 	<script type="text/x-handlebars" data-template-name="index">
 		<div id="index">
-			
-			<h2 class="title">Simple JavaScript for smart crafters.</h2>
+			<img id="brand" src="assets/img/logo.svg" alt="Javascript nation logo">
+			<h2 class="title">A nation of JavaScript fans.</h2>
 			
 			<div class='gitpack'>
 				<div id="github-wrapper"class="center-block">
-					<img id="github" src="assets/img/github.svg" alt="GitHub logo">
+					<a href="https://github.com/BassardF" target="_blank">
+						<img id="github" src="assets/img/github.svg" alt="GitHub logo">
+					</a>
 				</div>
 				<div class="label center-text">GitHub</div>
 			</div>
@@ -67,7 +72,10 @@
 			
 			<h2 class="title">{{model.title}}</h2>
 			<div class='subline'>
-				{{model.date}} by {{model.author}}
+				Posted the {{model.date}} by 
+				{{#link-to 'author' model.author_id}}
+					{{model.author}}
+				{{/link-to}}
 			</div>
 			
 			<div class="content">
@@ -79,6 +87,74 @@
 		</div>
 	</script>
 	
+	<script type="text/x-handlebars" data-template-name="author">
+		<div id="author">
+			<div id="header">
+				<div id="picture-wrapper">
+					<img src="assets/img/{{model.pic}}">
+				</div>
+				<div id="identity-wrapper">
+					<h1 id="name">{{model.name}}</h1>
+					<div id="job-wrapper">
+						<div><img src="assets/img/{{model.job.logo}}"></div>
+						<div>{{model.job.text}}</div>
+					</div>
+					<div id="social-wrapper">
+						{{#each social in model.social}}
+							<a href="{{social.url}}" target="_blank">
+								<div class="inline-block">
+									<img src="assets/img/{{social.pic}}">
+								</div>
+							</a>
+						{{/each}}
+					</div>
+					<div id="website-wrapper">
+						<a	href="{{model.website.url}}">{{model.website.label}}</a>
+					</div>
+				</div>
+			</div>
+			
+			<h2>Skills</h2>		
+				<div class="row">
+					<div class="four columns">
+						<h4>general</h4>
+						{{#each skill in model.general-skills}}
+							<div>
+								<img class="skill-pic" src="assets/img/{{skill.pic}}">
+								{{skill.name}}
+							</div>
+							<div>
+								<progress max="100" value="{{skill.value}}"></progress>
+							</div>
+						{{/each}}
+					</div>
+					<div class="four columns">
+						<h4>Front-end</h4>
+						{{#each skill in model.front-skills}}
+							<div>
+								<img class="skill-pic" src="assets/img/{{skill.pic}}">
+								{{skill.name}}
+							</div>
+							<div>
+								<progress max="100" value="{{skill.value}}"></progress>
+							</div>
+						{{/each}}
+					</div>
+					<div class="four columns">
+						<h4>Front-end</h4>
+						{{#each skill in model.back-skills}}
+							<div>
+								<img class="skill-pic" src="assets/img/{{skill.pic}}">
+								{{skill.name}}
+							</div>
+							<div>
+								<progress max="100" value="{{skill.value}}"></progress>
+							</div>
+						{{/each}}
+					</div>
+				</div>
+		</div>
+	</script>
 
 
 	<!-- Apis -->
@@ -102,8 +178,9 @@
 	<!-- Routes -->
 	<script type="text/javascript" src="app/routes/index.js"></script>
 	<script type="text/javascript" src="app/routes/article.js"></script>
+	<script type="text/javascript" src="app/routes/author.js"></script>	
+	<!-- Views -->
+	<script type="text/javascript" src="app/views/article.js"></script>
 
-
-	
 </body>
 </html>

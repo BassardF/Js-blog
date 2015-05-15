@@ -18,7 +18,25 @@ li{
 	text-align: center;
 }
 
+.inline-block{
+	display: inline-block;
+}
+
+a{
+	text-decoration: none;
+}
+
 /* Index */
+
+#index #brand{
+	margin-top: 100px;
+	margin-bottom: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+	height: 100px;
+	width: 100px;	
+}
 
 #index a {
     color: inherit;
@@ -33,7 +51,6 @@ li{
 
 #index .title{
 	text-align: center;
-	margin-top: 170px;
 	margin-bottom: 30px;
 }
 
@@ -127,6 +144,10 @@ li{
 	border-bottom: 1px solid #eee;
 }
 
+#article .content{
+	margin-top: 50px;
+}
+
 #article .content > *{
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -161,4 +182,66 @@ li{
 
 #article h2{
 	margin-top: 50px !important;
+}
+
+/* Author */
+
+#author{
+	margin-top: 100px;
+}
+
+#author #header > div{
+	display : inline-block;
+	vertical-align: top;
+}
+
+#author #picture-wrapper img{
+	border-radius: 100px;	
+	max-width: 200px;
+	max-height: 200px;	
+}
+
+#author #name{
+	padding-left: 30px;
+	border-bottom: 1px solid #eee;
+	width : 100%;
+}
+
+#author #job-wrapper{
+	padding-left: 30px;	
+}
+
+#author #job-wrapper > div{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#author #job-wrapper img{
+	margin-left: 10px;
+	height: 30px;
+	width: 30px;	
+}
+
+#author #website-wrapper{
+	padding-left: 40px;
+}
+
+#author h2{
+	margin-top: 30px;
+}
+
+#author #social-wrapper{
+	padding-left: 40px;	
+}
+
+#author #social-wrapper img{
+	margin-right: 5px;
+	height: 30px;
+	width: 30px;	
+}
+
+#author .skill-pic{
+	vertical-align: middle;
+	height: 30px;
+	width: 30px;	
 }
