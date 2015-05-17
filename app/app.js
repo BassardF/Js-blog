@@ -9,7 +9,7 @@ Ember.Handlebars.helper('content', function(item, options) {
 	} else if(item.type === 'p'){
 		return new Handlebars.SafeString('<p>' + item.value + '<p>');
 	} else if(item.type === 'img'){
-		return new Handlebars.SafeString('<img src="assets/img/' + item.value + '">');
+		return new Handlebars.SafeString('<img src="assets/img/' + item.value + '" alt="' + item.value + '">');
 	} else if(item.type === 'quote'){
 		return new Handlebars.SafeString('<div class="quote"><div class="inner"> "' + item.value + '"</div><div class="author"> -- ' + item.author + '</div></div>');
 	} else if(item.type === 'code'){

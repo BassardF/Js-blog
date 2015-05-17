@@ -1,7 +1,7 @@
 [
 	{
 		"article_id" : 1,
-		"title" : "Angular Watch depth",
+		"title" : "Angular Watching depth",
 		"description" : "Performance and depth analysis of Angular's watching system.",		
 		"date" : "5/3/2015",
 		"tags" : ["JavaScript", "AngularJs"],
@@ -10,7 +10,7 @@
 		"released" : true,
 		"content" : [{
 			"type" : "p",
-			"value" : "Watching the properties of the $scope is one of the core features of Angular. Most of the time it's an hidden process run in the background for you by the engine but It's still common to use it manually."
+			"value" : "Watching the properties of the $scope is one of the core features of Angular. Most of the time it's an hidden process run in the background for you by the engine, but It's still common to use it manually."
 		}, {
 			"type" : "p",
 			"value" : "Angular gives 3 way to watch a property depending on the depth required. The most depth you need, the less efficient is going to be the watch cycle."
