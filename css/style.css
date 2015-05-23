@@ -139,9 +139,11 @@ a{
 #article .title{
 	text-align: center;
 	margin-top: 100px;
-	padding-bottom: 40px;
+}
+
+#article .article-header{
 	margin-bottom: 5px;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #eee;		
 }
 
 #article .content{
@@ -154,7 +156,7 @@ a{
 }
 
 #article .subline{
-	opacity: .6;
+	opacity: .8;
 	float: right;
 }
 
@@ -182,6 +184,28 @@ a{
 
 #article h2{
 	margin-top: 50px !important;
+}
+
+#article .home-img{
+	height: 40px;
+	width: 40px;
+	display: block;
+	margin: inherit;
+}
+
+#article .home-pack{
+	width: 40px;
+	cursor: pointer;
+	opacity: .6;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-ms-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+}
+
+#article .home-pack:hover{
+	opacity: 1;
 }
 
 /* Author */
@@ -244,4 +268,26 @@ a{
 	vertical-align: middle;
 	height: 30px;
 	width: 30px;	
+}
+
+#author .home-pack{
+	float: right;
+	width: 40px;
+	cursor: pointer;
+	opacity: .6;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-ms-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+}
+
+#author .home-pack:hover{
+	opacity: 1;
+}
+
+#author .home-img{
+	height: 40px;
+	width: 40px;
+	display: block;
 }

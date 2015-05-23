@@ -70,8 +70,16 @@
 	
 	<script type="text/x-handlebars" data-template-name="article">
 		<div id="article">
-			
-			<h2 class="title">{{model.title}}</h2>
+			<div class="article-header">
+				<h2 class="title">{{model.title}}</h2>
+				<a href="/">
+					<div class="home-pack">
+						<img class="home-img" src="assets/img/home1.svg">
+						Home
+					</div>
+				</a>
+
+			</div>
 			<div class='subline'>
 				Posted the {{model.date}} by 
 				{{#link-to 'author' model.author_id}}
@@ -94,6 +102,12 @@
 				<div id="picture-wrapper">
 					<img src="assets/img/{{model.pic}}" alt="Author picture">
 				</div>
+				<a href="/">
+					<div class="home-pack">
+						<img class="home-img" src="assets/img/home1.svg">
+						Home
+					</div>
+				</a>
 				<div id="identity-wrapper">
 					<h1 id="name">{{model.name}}</h1>
 					<div id="job-wrapper">
