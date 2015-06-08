@@ -60,5 +60,50 @@
 			"type" : "p",
 			"value" : "Keep in mind that using equality watches is the heavier type watch, use it only if you need an in-depth comparaison of your object."
 		}]
+	},
+
+	{
+		"article_id" : 2,
+		"title" : "TypeScript basic cheatsheet for developer",
+		"description" : "A quick overview / get started of TypeScript.",
+		"date" : "6/9/2015",
+		"tags" : ["JavaScript", "TypeScript"],
+		"author" : "Frank Bassard",
+		"author_id" : "1",		
+		"released" : true,
+		"content" : [{
+			"type" : "p",
+			"value" : "Wether they have inspired ES6 standards or been inspired by those, transpilers ands shims define tomorrow’s standard JavaScript. Although I spent heaps of time playing with those, I always avoided using them when trying to create products. Mainly because I wasn’t always happy with the compiled JavaScript (also because I felt robbed of a special kind of freedom well known to JavaScript aficionados)."
+		}, {
+			"type" : "p",
+			"value" : "I recently gave a shot to TypeScript which should be (ok, it’s kinda sure …) the language of choice for the next version of Angular and found myself quite please with the compiled output."
+		}, {
+			"type" : "p",
+			"value" : "As I sincerely consider using it for my next project here is my quick cheatsheet. It’s nothing more than a quick introduction made for developer (mainly made for me). Give it a try if you want to get started in no time or juste to have an overview of TypeScript features."
+		}, {
+			"type" : "link",
+			"href" : "assets/typescript101.pdf",
+			"value" : "TypeScript 101"
+		},  {
+			"type" : "p",
+			"value" : "A few interesting shims / transpilers : "
+		}, {
+			"type" : "link",
+			"href" : "https://babeljs.io/",
+			"value" : "Babel"
+		}, {
+			"type" : "link",
+			"href" : "http://coffeescript.org/",
+			"value" : "CoffeeScript"
+		}, {
+			"type" : "link",
+			"href" : "http://www.typescriptlang.org/",
+			"value" : "TypeScript"
+		}, {
+			"type" : "link",
+			"href" : "https://github.com/paulmillr/es6-shim/",
+			"value" : "ES6-shim by paulmillr"
+		}]
 	}
+
 ]

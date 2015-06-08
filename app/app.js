@@ -14,6 +14,8 @@ Ember.Handlebars.helper('content', function(item, options) {
 		return new Handlebars.SafeString('<div class="quote"><div class="inner"> "' + item.value + '"</div><div class="author"> -- ' + item.author + '</div></div>');
 	} else if(item.type === 'code'){
 		return new Handlebars.SafeString('<pre class="brush: ' + item.syntax + '">' + item.value +'</pre>');
+	} else if(item.type === 'link'){
+		return new Handlebars.SafeString('<a href="' + item.href + '">' + item.value +'</a><br>');
 	} else if(item.type === 'list'){
 		var ul = '<ul>#</ul>',
 			li = '<li>#</li>',
